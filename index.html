@@ -3,152 +3,160 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Марія Шевчук — дитячий лікар у Тернополі</title>
-<meta name="description" content="Лікар-педіатр у Тернополі: огляди дітей від народження до 18 років, консультації при хворобі, супровід першого року. Запис через Viber, Telegram або телефоном.">
+<title>Марія Шевчук — лікар-педіатр у Тернополі</title>
+<meta name="description" content="Лікар-педіатр у Тернополі: планові огляди, прийом при хворобі, супровід першого року, консультації щодо щеплень. Діти від 0 до 18 років. Запис через Viber, Telegram або телефоном.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --cream:#f9f4f2; --white:#ffffff; --ink:#2d2c2b; --muted:#5f5b58; --line:#ece4df;
-    --sun:#ffce00; --sun-soft:#fff3c2; --blue:#0061ef; --blue-dark:#004fc4; --blue-soft:#e3edff;
-    --orange:#f47d31; --orange-soft:#ffe6d6; --pink-soft:#fde3ea; --indigo:#3b197f;
-    --max:1180px;
+    --bg:#f5f7f9; --paper:#ffffff; --ink:#15293a; --muted:#566676; --line:#dde5eb;
+    --acc:#2a6b8a; --acc-dark:#1d5068; --acc-soft:#e7f0f4; --warm:#c9824f;
+    --max:1160px;
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth}
-  body{font-family:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--cream);color:var(--ink);font-size:18px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  body{font-family:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
   a{color:inherit;text-decoration:none}
   img,svg{display:block;max-width:100%}
   .wrap{max-width:var(--max);margin:0 auto;padding:0 20px}
-  h1,h2,h3{font-weight:800;letter-spacing:-.02em;line-height:1.1;text-wrap:balance}
-  h1{font-size:clamp(40px,6.4vw,70px);letter-spacing:-.03em}
-  h2{font-size:clamp(32px,4.6vw,48px);margin:12px 0 16px}
-  h3{font-size:22px}
-  .eyebrow{display:inline-block;font-size:13px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:var(--sun);color:var(--ink);padding:5px 14px;border-radius:999px}
-  .lead{font-size:clamp(17px,1.9vw,20px);color:var(--muted);max-width:560px}
-  section{padding:92px 0}
-  :focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+  h1,h2,h3{font-weight:800;letter-spacing:-.02em;line-height:1.15;text-wrap:balance}
+  h1{font-size:clamp(34px,5vw,54px)}
+  h2{font-size:clamp(28px,3.8vw,40px);margin:10px 0 14px}
+  h3{font-size:19px;font-weight:700}
+  .eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--acc)}
+  .lead{font-size:clamp(17px,1.8vw,19px);color:var(--muted);max-width:580px}
+  section{padding:84px 0}
+  :focus-visible{outline:3px solid var(--acc);outline-offset:3px}
 
-  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 30px;border-radius:999px;font:800 17px/1 "Nunito",sans-serif;border:2px solid transparent;transition:transform .15s,box-shadow .15s,background .15s}
-  .btn-main{background:var(--blue);color:#fff;box-shadow:0 4px 0 var(--indigo)}
-  .btn-main:hover{transform:translateY(-2px);box-shadow:0 6px 0 var(--indigo)}
-  .btn-ghost{background:var(--white);border-color:var(--ink);color:var(--ink)}
-  .btn-ghost:hover{background:var(--sun-soft)}
-  .btn svg{width:20px;height:20px}
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:54px;padding:0 28px;border-radius:12px;font:700 16px/1 "Manrope",sans-serif;border:1.5px solid transparent;transition:background .15s,border-color .15s}
+  .btn-main{background:var(--acc);color:#fff}
+  .btn-main:hover{background:var(--acc-dark)}
+  .btn-ghost{background:var(--paper);border-color:var(--line);color:var(--ink)}
+  .btn-ghost:hover{border-color:var(--acc)}
+  .btn svg{width:19px;height:19px}
 
-  .demo{background:var(--indigo);color:#ddd5f5;font-size:13px;text-align:center;padding:8px 16px}
-  .notice{background:var(--sun);font-weight:700;font-size:15px;text-align:center;padding:10px 16px}
-  nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(249,244,242,.94);backdrop-filter:blur(8px)}
-  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
-  .logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:19px}
-  .logo i{width:36px;height:36px;border-radius:50%;background:var(--orange);display:grid;place-items:center}
-  .logo i svg{width:20px;height:20px}
-  .nav-links{display:flex;gap:28px;font-weight:700;font-size:16px;color:var(--muted)}
-  .nav-links a:hover{color:var(--blue)}
-  nav .btn{min-height:46px;padding:0 22px;font-size:15px;box-shadow:0 3px 0 var(--indigo)}
+  .demo{background:var(--ink);color:#c9d6e0;font-size:13px;text-align:center;padding:7px 16px}
+  .notice{background:var(--acc-soft);color:var(--acc-dark);font-weight:600;font-size:14px;text-align:center;padding:9px 16px;border-bottom:1px solid var(--line)}
+  nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:rgba(255,255,255,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .logo{display:flex;flex-direction:column;line-height:1.2}
+  .logo b{font-size:17px;font-weight:800}
+  .logo span{font-size:13px;color:var(--muted)}
+  .nav-links{display:flex;gap:28px;font-weight:600;font-size:15px;color:var(--muted)}
+  .nav-links a:hover{color:var(--acc)}
+  nav .btn{min-height:44px;padding:0 20px;font-size:14px}
 
   /* hero */
-  .hero{padding:40px 0 92px}
+  .hero{padding:56px 0 72px;background:var(--paper)}
   .hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
-  .hero h1{margin:18px 0 20px}
-  .hero h1 mark{background:linear-gradient(transparent 62%,var(--sun) 62%);color:inherit;padding:0 4px}
-  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin:32px 0 30px}
-  .ages{display:flex;flex-wrap:wrap;gap:10px}
-  .age{background:var(--white);border-radius:999px;padding:8px 16px;font-weight:700;font-size:15px}
-  .age:nth-child(1){background:var(--pink-soft)} .age:nth-child(2){background:var(--sun-soft)} .age:nth-child(3){background:var(--blue-soft)} .age:nth-child(4){background:var(--orange-soft)}
+  .hero h1{margin:14px 0 18px}
+  .hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin:30px 0 28px}
+  .trust{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:15px;color:var(--muted);font-weight:600}
+  .trust span{display:flex;align-items:center;gap:8px}
+  .trust svg{width:18px;height:18px;color:var(--acc);flex:none}
   .hero-pic{position:relative}
-  .ph{position:relative;overflow:hidden;background:linear-gradient(150deg,var(--sun) 0%,var(--orange) 100%);display:grid;place-items:center}
+  .ph{position:relative;overflow:hidden;background:var(--acc-soft);border-radius:20px}
   .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-  .ph span{font-weight:700;font-size:14px;background:rgba(255,255,255,.9);border-radius:999px;padding:6px 14px}
-  .hero-pic .ph{aspect-ratio:4/5;max-width:100%;border-radius:32px}
-  .bubble{position:absolute;background:var(--white);border-radius:22px;padding:14px 18px;box-shadow:0 10px 30px rgba(45,44,43,.12);font-weight:700;font-size:15px;line-height:1.35;display:flex;align-items:center;gap:12px}
-  .bubble b{font-size:28px;font-weight:900;color:var(--blue);line-height:1}
-  .b1{left:-22px;bottom:40px}
-  .b2{right:-14px;top:36px;background:var(--sun)}
+  .hero .ph{aspect-ratio:4/5}
+  .hero-card{position:absolute;left:-20px;bottom:28px;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:14px 18px;box-shadow:0 12px 30px rgba(21,41,58,.10);font-size:14px;line-height:1.4}
+  .hero-card b{display:block;font-size:15px}
+  .hero-card span{color:var(--muted)}
 
-  /* cards */
-  .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
-  .card{background:var(--white);border-radius:24px;padding:30px;display:flex;flex-direction:column;gap:10px}
-  .card .ico{width:54px;height:54px;border-radius:16px;display:grid;place-items:center;margin-bottom:6px}
-  .card .ico svg{width:28px;height:28px}
-  .card p{color:var(--muted);font-size:16px;flex:1}
-  .card .price{font-weight:800;color:var(--blue);padding-top:12px;border-top:2px dashed var(--line);font-variant-numeric:tabular-nums}
+  /* stats */
+  .stats{background:var(--ink);color:#fff;padding:44px 0}
+  .stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+  .stat strong{display:block;font-size:clamp(28px,3.4vw,38px);font-weight:800;letter-spacing:-.02em;line-height:1.1}
+  .stat span{font-size:15px;color:#a9bccb}
 
-  /* worry band */
-  .band{background:var(--blue);color:#fff;border-radius:36px;padding:56px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-  .band h2{color:#fff}
-  .band p{color:#d6e4ff}
-  .band ul{list-style:none;display:grid;gap:12px}
-  .band li{background:rgba(255,255,255,.12);border-radius:18px;padding:14px 18px;font-weight:700;display:flex;gap:12px;align-items:center}
-  .band li i{flex:none;width:28px;height:28px;border-radius:50%;background:var(--sun);display:grid;place-items:center}
-  .band li i svg{width:14px;height:14px}
+  /* services */
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
+  .card{background:var(--paper);border:1px solid var(--line);border-radius:16px;padding:26px;display:flex;flex-direction:column;gap:8px}
+  .card p{color:var(--muted);font-size:15.5px;flex:1}
+  .price{font-weight:800;color:var(--acc);padding-top:12px;margin-top:6px;border-top:1px solid var(--line);font-variant-numeric:tabular-nums}
+
+  /* principles */
+  .principles{background:var(--paper)}
+  .pr-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:36px}
+  .pr{border-top:3px solid var(--acc);padding-top:18px}
+  .pr p{color:var(--muted);font-size:15.5px;margin-top:6px}
 
   /* about */
-  .about .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
-  .about .ph{aspect-ratio:1/1;border-radius:50% 50% 32px 32px;max-width:100%;background:linear-gradient(150deg,var(--blue-soft),var(--blue))}
-  .about-text p{color:var(--muted);margin-bottom:16px}
-  .facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:24px 0}
-  .fact{background:var(--white);border-radius:18px;padding:16px 18px}
-  .fact small{display:block;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--orange)}
-  .fact p{margin:2px 0 0;color:var(--ink);font-weight:700;font-size:16px}
+  .about .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:56px;align-items:center}
+  .about .ph{aspect-ratio:1/1}
+  .about-text p{color:var(--muted);margin-bottom:14px}
+  .facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:22px 0 26px}
+  .fact{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+  .fact small{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--acc)}
+  .fact p{margin:2px 0 0;color:var(--ink);font-weight:600;font-size:15px}
 
-  /* bag checklist */
-  .bag{background:var(--white)}
-  .bag .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-  .check{display:grid;gap:12px}
-  .check label{display:flex;gap:14px;align-items:center;background:var(--cream);border-radius:18px;padding:16px 18px;font-weight:700;cursor:pointer}
-  .check input{appearance:none;flex:none;width:26px;height:26px;border-radius:8px;border:2px solid var(--ink);background:var(--white);display:grid;place-items:center;cursor:pointer}
-  .check input:checked{background:var(--sun)}
-  .check input:checked::after{content:"✓";font-weight:900;font-size:16px;color:var(--ink)}
-  .check span small{display:block;font-weight:600;font-size:14px;color:var(--muted)}
+  /* steps */
+  .visit{background:var(--paper)}
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:36px}
+  .step{background:var(--bg);border-radius:14px;padding:22px}
+  .step b{display:inline-grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--acc);color:#fff;font-size:15px;margin-bottom:12px;font-variant-numeric:tabular-nums}
+  .step p{color:var(--muted);font-size:15px;margin-top:4px}
+
+  /* checklist */
+  .bag .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+  .check{display:grid;gap:10px}
+  .check label{display:flex;gap:14px;align-items:flex-start;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px;font-weight:600;cursor:pointer}
+  .check input{appearance:none;flex:none;width:22px;height:22px;margin-top:2px;border-radius:6px;border:1.5px solid #9fb0bd;background:var(--paper);display:grid;place-items:center;cursor:pointer}
+  .check input:checked{background:var(--acc);border-color:var(--acc)}
+  .check input:checked::after{content:"";width:6px;height:11px;border:solid #fff;border-width:0 2.5px 2.5px 0;transform:rotate(45deg) translate(-1px,-1px)}
+  .check span small{display:block;font-weight:500;font-size:14px;color:var(--muted)}
 
   /* reviews */
-  .rv-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px}
-  .rv{border:2px dashed #d9cfc9;border-radius:24px;padding:28px;color:var(--muted);font-size:16px;background:var(--white)}
-  .rv b{display:block;color:var(--sun);font-size:22px;letter-spacing:3px;margin-bottom:8px;-webkit-text-stroke:1px #e0b400}
+  .reviews{background:var(--paper)}
+  .rv{border:1.5px dashed var(--line);border-radius:14px;padding:24px;color:var(--muted);font-size:15px}
 
   /* faq */
-  .faq{max-width:800px;margin-top:30px;display:grid;gap:12px}
-  details{background:var(--white);border-radius:20px;padding:20px 24px}
-  summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-weight:800;font-size:19px}
+  .faq{max-width:800px;margin-top:28px}
+  details{border-bottom:1px solid var(--line);padding:20px 0}
+  summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;gap:20px;font-weight:700;font-size:18px}
   summary::-webkit-details-marker{display:none}
-  summary::after{content:"+";flex:none;width:30px;height:30px;border-radius:50%;background:var(--sun-soft);display:grid;place-items:center;font-size:22px;line-height:1;transition:transform .2s}
+  summary::after{content:"+";flex:none;font-size:24px;line-height:1;color:var(--acc);transition:transform .2s}
   details[open] summary::after{transform:rotate(45deg)}
-  details p{color:var(--muted);margin-top:10px;font-size:17px}
+  details p{color:var(--muted);margin-top:10px}
 
   /* contact */
-  .contact .box{background:var(--sun);border-radius:36px;padding:56px;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
-  .contact .lead{color:#5a4a00}
-  .contact .eyebrow{background:var(--white)}
-  .c-btns{display:grid;gap:12px;margin-top:28px;max-width:420px}
-  .info{background:var(--white);border-radius:26px;padding:30px;display:grid;gap:20px}
-  .info small{display:block;font-size:13px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;color:var(--orange)}
-  .info p{font-weight:700;font-size:18px}
-  footer{color:var(--muted);font-size:14px;padding:12px 0 100px}
-  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:24px}
+  .contact{background:var(--ink);color:#fff}
+  .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+  .contact h2{color:#fff}
+  .contact .eyebrow{color:#8fc1d8}
+  .contact .lead{color:#a9bccb}
+  .c-btns{display:grid;gap:12px;margin-top:26px;max-width:420px}
+  .contact .btn-ghost{background:transparent;border-color:rgba(255,255,255,.3);color:#fff}
+  .contact .btn-ghost:hover{border-color:#fff}
+  .info{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:28px;display:grid;gap:18px}
+  .info small{display:block;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#8fc1d8}
+  .info p{font-weight:600;font-size:17px}
+  footer{background:var(--ink);color:#8398a8;font-size:14px;padding:0 0 100px}
+  footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;border-top:1px solid rgba(255,255,255,.1);padding-top:22px}
 
-  .mbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--white);border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));gap:8px}
-  .mbar a{flex:1;min-height:50px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:6px;font-weight:800;font-size:15px}
+  .mbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--paper);border-top:1px solid var(--line);padding:10px 12px calc(10px + env(safe-area-inset-bottom,0px));gap:8px}
+  .mbar a{flex:1;min-height:50px;border-radius:12px;display:flex;align-items:center;justify-content:center;gap:6px;font-weight:700;font-size:15px}
   .mbar svg{width:18px;height:18px}
-  .mbar .m1{background:var(--blue);color:#fff;flex:1.3}
+  .mbar .m1{background:var(--acc);color:#fff;flex:1.3}
   .mbar .m2{background:#7360f2;color:#fff}
   .mbar .m3{background:#229ed9;color:#fff}
 
   @media (max-width:960px){
-    section{padding:64px 0}
+    section{padding:60px 0}
     .nav-links{display:none}
-    .hero{padding:28px 0 64px}
-    .hero .wrap,.about .wrap,.bag .wrap,.band,.contact .box{grid-template-columns:1fr;gap:36px}
-    .hero-pic{max-width:420px;margin:0 auto;width:100%}
-    .b1{left:10px;bottom:14px}.b2{right:10px;top:14px}
-    .cards,.rv-grid{grid-template-columns:1fr}
-    .band,.contact .box{padding:36px 24px;border-radius:28px}
-    .about .ph{max-width:360px;margin:0 auto;width:100%}
+    .hero{padding:28px 0 56px}
+    .hero .wrap,.about .wrap,.bag .wrap,.contact .wrap{grid-template-columns:1fr;gap:34px}
+    .hero-pic{max-width:440px;width:100%;margin:0 auto}
+    .hero-card{left:12px;bottom:12px}
+    .stats .wrap{grid-template-columns:repeat(2,1fr);gap:26px 16px}
+    .grid-3,.pr-grid{grid-template-columns:1fr}
+    .steps{grid-template-columns:1fr 1fr}
+    .about .ph{max-width:380px;width:100%;margin:0 auto}
     .mbar{display:flex}
     footer{padding-bottom:110px}
   }
   @media (max-width:520px){
+    .steps{grid-template-columns:1fr}
     .hero-cta .btn{width:100%}
     nav .btn{display:none}
     .facts{grid-template-columns:1fr}
@@ -159,11 +167,11 @@
 <body>
 
 <div class="demo">Демо-сайт для портфоліо: лікар, ціни й контакти вигадані</div>
-<div class="notice">Прийом дітей з температурою — в окремі години, щоб не заражати інших</div>
+<div class="notice">Діти з температурою — в окремі години (Пн–Пт 16:00–18:00), щоб не контактувати зі здоровими</div>
 
 <nav>
   <div class="wrap">
-    <a href="#" class="logo"><i><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 0 0-7.8 7.8l1 1.1L12 21l7.8-7.5 1-1.1a5.5 5.5 0 0 0 0-7.8z"/></svg></i>Педіатр Марія Шевчук</a>
+    <a href="#" class="logo"><b>Марія Шевчук</b><span>лікар-педіатр · Тернопіль</span></a>
     <div class="nav-links">
       <a href="#services">Послуги</a><a href="#about">Про лікаря</a><a href="#faq">Питання</a><a href="#contact">Контакти</a>
     </div>
@@ -174,65 +182,74 @@
 <header class="hero">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Дитячий лікар · Тернопіль</span>
-      <h1>Лікар, до якого дитина <mark>не боїться</mark> йти</h1>
-      <p class="lead">Оглядаю дітей від народження до 18 років. Не поспішаю, пояснюю батькам кожне призначення простими словами й залишаюся на зв'язку після прийому.</p>
+      <div class="eyebrow">Лікар-педіатр · Тернопіль</div>
+      <h1>Педіатр, який пояснює батькам кожне призначення</h1>
+      <p class="lead">Оглядаю дітей від народження до 18 років. Призначаю лише те, що потрібно, і пояснюю, навіщо. Після прийому залишаюся на зв'язку для уточнень.</p>
       <div class="hero-cta">
         <a href="#contact" class="btn btn-main">Записати дитину</a>
-        <a href="tel:+380000000000" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Зателефонувати</a>
+        <a href="tel:+380000000000" class="btn btn-ghost"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>Зателефонувати</a>
       </div>
-      <div class="ages"><span class="age">Новонароджені</span><span class="age">Малюки до 3 років</span><span class="age">Дошкільнята</span><span class="age">Школярі й підлітки</span></div>
+      <div class="trust">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>11 років практики</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Діти від 0 до 18 років</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>Прийом без черг, за записом</span>
+      </div>
     </div>
     <div class="hero-pic">
-      <div class="ph"><span>Тут буде фото лікаря з дитиною</span><img src="images/hero.jpg" alt="Лікар-педіатр оглядає дитину" onerror="this.remove()"></div>
-      <div class="bubble b1"><b>11</b>років<br>з дітьми</div>
-      <div class="bubble b2">Іграшки й наліпки<br>після прийому</div>
+      <div class="ph"><img src="images/hero.jpg" alt="Лікар-педіатр оглядає дитину"></div>
+      <div class="hero-card"><b>Найближчий запис</b><span>зазвичай протягом 1–2 днів</span></div>
     </div>
   </div>
 </header>
 
-<section id="services" style="padding-top:0">
+<div class="stats">
   <div class="wrap">
-    <span class="eyebrow">Послуги</span>
-    <h2>Чим я допомагаю</h2>
-    <p class="lead">Ціни орієнтовні. Якщо дітей двоє, другого оглядаю зі знижкою.</p>
-    <div class="cards">
-      <div class="card"><div class="ico" style="background:var(--blue-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="#0061ef" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.8 2.3A.3.3 0 1 0 5 2H4a2 2 0 0 0-2 2v5a6 6 0 0 0 12 0V4a2 2 0 0 0-2-2h-1a.2.2 0 1 0 .3.3"/><path d="M8 15v1a6 6 0 0 0 12 0v-4"/><circle cx="20" cy="10" r="2"/></svg></div><h3>Плановий огляд</h3><p>Ріст, вага, розвиток за віком, поради з харчування й режиму.</p><div class="price">від 600 грн</div></div>
-      <div class="card"><div class="ico" style="background:var(--orange-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="#f47d31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4v10.5a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0z"/></svg></div><h3>Коли дитина захворіла</h3><p>Температура, кашель, нежить, висип. Огляд і зрозумілий план лікування.</p><div class="price">від 650 грн</div></div>
-      <div class="card"><div class="ico" style="background:var(--pink-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="#d6457a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="5"/><path d="M9 8h.01M15 8h.01M10 10.5a3 3 0 0 0 4 0"/><path d="M6 21v-1a6 6 0 0 1 12 0v1"/></svg></div><h3>Супровід першого року</h3><p>Щомісячні огляди малюка й підтримка батьків у месенджері.</p><div class="price">від 5 500 грн / рік</div></div>
-      <div class="card"><div class="ico" style="background:var(--sun-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="#b58f00" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M8 13h8M8 17h5"/></svg></div><h3>Довідки</h3><p>Для садочка, школи, басейну й таборів після огляду.</p><div class="price">від 400 грн</div></div>
-      <div class="card"><div class="ico" style="background:var(--blue-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="#0061ef" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div><h3>Консультація щодо щеплень</h3><p>Перевіряємо календар, обговорюємо графік і питання батьків.</p><div class="price">від 450 грн</div></div>
-      <div class="card"><div class="ico" style="background:var(--orange-soft)"><svg viewBox="0 0 24 24" fill="none" stroke="#f47d31" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5L12 3l9 6.5V20a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="M9 21v-7h6v7"/></svg></div><h3>Виклик додому</h3><p>Коли дитині краще не виходити з дому. У межах міста.</p><div class="price">від 1 200 грн</div></div>
+    <div class="stat"><strong>11 років</strong><span>у педіатрії</span></div>
+    <div class="stat"><strong>0–18</strong><span>років — вік пацієнтів</span></div>
+    <div class="stat"><strong>30–40 хв</strong><span>тривалість прийому</span></div>
+    <div class="stat"><strong>7 днів</strong><span>на зв'язку після візиту</span></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="eyebrow">Послуги</div>
+    <h2>З чим можна звернутися</h2>
+    <p class="lead">Ціни орієнтовні. Остаточну вартість називаю до початку прийому.</p>
+    <div class="grid-3">
+      <div class="card"><h3>Плановий огляд</h3><p>Ріст, вага й розвиток за віком, поради щодо харчування та режиму.</p><div class="price">від 600 грн</div></div>
+      <div class="card"><h3>Прийом при хворобі</h3><p>Температура, кашель, нежить, висип. Огляд і зрозумілий план лікування.</p><div class="price">від 650 грн</div></div>
+      <div class="card"><h3>Супровід першого року</h3><p>Щомісячні огляди малюка й відповіді на питання батьків у месенджері.</p><div class="price">від 5 500 грн / рік</div></div>
+      <div class="card"><h3>Консультація щодо щеплень</h3><p>Перевірка календаря, графік і відповіді на питання батьків.</p><div class="price">від 450 грн</div></div>
+      <div class="card"><h3>Довідки</h3><p>Для садочка, школи, басейну й таборів — після огляду.</p><div class="price">від 400 грн</div></div>
+      <div class="card"><h3>Виклик додому</h3><p>Коли дитині краще не виходити з дому. У межах міста.</p><div class="price">від 1 200 грн</div></div>
     </div>
   </div>
 </section>
 
-<section style="padding-top:0">
+<section class="principles">
   <div class="wrap">
-    <div class="band">
-      <div>
-        <h2>Для дитини прийом — це гра</h2>
-        <p>Діти бояться не лікаря, а невідомості. Тому спершу знайомимося, граємо з іграшками, «слухаємо» ведмедика фонендоскопом, а вже потім оглядаємо.</p>
-      </div>
-      <ul>
-        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="#2d2c2b" stroke-width="3.5"><path d="M20 6L9 17l-5-5"/></svg></i>Огляд на руках у мами, якщо так спокійніше</li>
-        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="#2d2c2b" stroke-width="3.5"><path d="M20 6L9 17l-5-5"/></svg></i>Прийом 30–40 хвилин, без черг</li>
-        <li><i><svg viewBox="0 0 24 24" fill="none" stroke="#2d2c2b" stroke-width="3.5"><path d="M20 6L9 17l-5-5"/></svg></i>Наліпка «Сміливий пацієнт» наприкінці</li>
-      </ul>
+    <div class="eyebrow">Підхід</div>
+    <h2>Як я працюю</h2>
+    <div class="pr-grid">
+      <div class="pr"><h3>Лише потрібні призначення</h3><p>Не призначаю «про всяк випадок». Кожен аналіз і препарат має пояснення.</p></div>
+      <div class="pr"><h3>План зрозумілий батькам</h3><p>Після прийому ви знаєте, що робити вдома, і на що звертати увагу.</p></div>
+      <div class="pr"><h3>Зв'язок після візиту</h3><p>Протягом тижня відповідаю на уточнювальні питання в месенджері в робочий час.</p></div>
     </div>
   </div>
 </section>
 
-<section id="about" class="about" style="padding-top:0">
+<section id="about" class="about">
   <div class="wrap">
-    <div class="ph"><span>Тут буде портрет лікаря</span><img src="images/doctor.jpg" alt="Лікар-педіатр Марія Шевчук" onerror="this.remove()"></div>
+    <div class="ph"><img src="images/doctor.jpg" alt="Лікар-педіатр Марія Шевчук"></div>
     <div class="about-text">
-      <span class="eyebrow">Про лікаря</span>
+      <div class="eyebrow">Про лікаря</div>
       <h2>Марія Шевчук</h2>
-      <p>Я педіатр і мама двох дітей, тому добре знаю, як це: нічна температура й тривога, яку ніхто не пояснив. На прийомі я відповідаю на всі питання батьків, навіть на ті, що здаються «дурними».</p>
+      <p>Лікар-педіатр з 11-річним досвідом. Веду дітей від перших днів життя до підліткового віку.</p>
+      <p>На прийомі не поспішаю: даю батькам поставити всі питання й пояснюю, що відбувається з дитиною та чому обрано саме таке лікування.</p>
       <div class="facts">
         <div class="fact"><small>Спеціальність</small><p>Лікар-педіатр</p></div>
-        <div class="fact"><small>Досвід</small><p>11 років з дітьми</p></div>
+        <div class="fact"><small>Досвід</small><p>11 років</p></div>
         <div class="fact"><small>Навчання</small><p>Щорічні курси з педіатрії</p></div>
         <div class="fact"><small>Мови</small><p>Українська, англійська</p></div>
       </div>
@@ -241,66 +258,76 @@
   </div>
 </section>
 
+<section class="visit">
+  <div class="wrap">
+    <div class="eyebrow">Запис</div>
+    <h2>Як проходить перший візит</h2>
+    <div class="steps">
+      <div class="step"><b>1</b><h3>Запис</h3><p>Пишете у Viber чи Telegram або телефонуєте.</p></div>
+      <div class="step"><b>2</b><h3>Час</h3><p>Підбираю вільне вікно, зазвичай протягом 1–2 днів.</p></div>
+      <div class="step"><b>3</b><h3>Огляд</h3><p>Розмова з батьками й огляд дитини без поспіху.</p></div>
+      <div class="step"><b>4</b><h3>План</h3><p>Рекомендації письмово й зв'язок для уточнень.</p></div>
+    </div>
+  </div>
+</section>
+
 <section class="bag">
   <div class="wrap">
     <div>
-      <span class="eyebrow">Перед прийомом</span>
+      <div class="eyebrow">Перед прийомом</div>
       <h2>Що взяти з собою</h2>
-      <p class="lead">Позначайте, що вже зібрали. Так точно нічого не забудете вдома.</p>
+      <p class="lead">Позначайте, що вже зібрали, щоб нічого не забути вдома.</p>
     </div>
     <div class="check">
       <label><input type="checkbox" id="c1"><span>Карта щеплень<small>або її фото в телефоні</small></span></label>
       <label><input type="checkbox" id="c2"><span>Список ліків, які дитина приймає<small>назви й дозування</small></span></label>
-      <label><input type="checkbox" id="c3"><span>Результати попередніх аналізів<small>якщо робили за останні пів року</small></span></label>
+      <label><input type="checkbox" id="c3"><span>Результати аналізів<small>якщо робили за останні пів року</small></span></label>
       <label><input type="checkbox" id="c4"><span>Пелюшка й змінний одяг<small>для малюків</small></span></label>
-      <label><input type="checkbox" id="c5"><span>Улюблена іграшка<small>з нею дитині спокійніше</small></span></label>
     </div>
   </div>
 </section>
 
-<section>
+<section class="reviews">
   <div class="wrap">
-    <span class="eyebrow">Відгуки</span>
-    <h2>Що кажуть батьки</h2>
-    <div class="rv-grid">
-      <div class="rv"><b>★★★★★</b>Тут буде справжній відгук батьків з Instagram або Google-карт, зі згоди автора.</div>
-      <div class="rv"><b>★★★★★</b>Тут буде справжній відгук батьків з Instagram або Google-карт, зі згоди автора.</div>
-      <div class="rv"><b>★★★★★</b>Тут буде справжній відгук батьків з Instagram або Google-карт, зі згоди автора.</div>
+    <div class="eyebrow">Відгуки</div>
+    <h2>Відгуки батьків</h2>
+    <div class="grid-3">
+      <div class="rv">Тут буде справжній відгук батьків з Google-карт або Instagram — зі згоди автора.</div>
+      <div class="rv">Тут буде справжній відгук батьків з Google-карт або Instagram — зі згоди автора.</div>
+      <div class="rv">Тут буде справжній відгук батьків з Google-карт або Instagram — зі згоди автора.</div>
     </div>
   </div>
 </section>
 
-<section id="faq" style="padding-top:0">
+<section id="faq">
   <div class="wrap">
-    <span class="eyebrow">Питання</span>
+    <div class="eyebrow">Питання</div>
     <h2>Батьки часто питають</h2>
     <div class="faq">
-      <details open><summary>Чи можна прийти з температурою?</summary><p>Так. Для дітей з температурою є окремі години прийому, щоб не контактувати зі здоровими дітьми. Напишіть у Viber, і я підкажу найближчий час.</p></details>
+      <details open><summary>Чи можна прийти з температурою?</summary><p>Так. Для дітей з температурою є окремі години прийому, щоб не контактувати зі здоровими дітьми.</p></details>
       <details><summary>Чи можна написати після прийому?</summary><p>Так, протягом тижня після візиту відповідаю на уточнювальні питання в месенджері в робочий час.</p></details>
       <details><summary>З якого віку ви приймаєте?</summary><p>Від перших днів життя до 18 років.</p></details>
-      <details><summary>Що робити вночі, якщо дитині погано?</summary><p>При загрозливих станах одразу телефонуйте 103. Я не заміняю швидку допомогу.</p></details>
+      <details><summary>Що робити вночі, якщо дитині погано?</summary><p>При загрозливих станах одразу телефонуйте 103. Приватний прийом не заміняє швидку допомогу.</p></details>
     </div>
   </div>
 </section>
 
-<section id="contact" style="padding-top:0">
+<section id="contact" class="contact">
   <div class="wrap">
-    <div class="box">
-      <div>
-        <span class="eyebrow">Запис</span>
-        <h2>Запишіть дитину на прийом</h2>
-        <p class="lead">Напишіть вік дитини й що турбує. Я запропоную найближчий вільний час.</p>
-        <div class="c-btns">
-          <a class="btn btn-main" href="viber://chat?number=%2B380000000000">Написати у Viber</a>
-          <a class="btn btn-ghost" href="https://t.me/example">Написати в Telegram</a>
-          <a class="btn btn-ghost" href="tel:+380000000000">+380 00 000 00 00</a>
-        </div>
+    <div>
+      <div class="eyebrow">Запис на прийом</div>
+      <h2>Запишіть дитину</h2>
+      <p class="lead">Напишіть вік дитини й що турбує — запропоную найближчий вільний час.</p>
+      <div class="c-btns">
+        <a class="btn btn-main" href="viber://chat?number=%2B380000000000">Написати у Viber</a>
+        <a class="btn btn-ghost" href="https://t.me/example">Написати в Telegram</a>
+        <a class="btn btn-ghost" href="tel:+380000000000">+380 00 000 00 00</a>
       </div>
-      <div class="info">
-        <div><small>Адреса</small><p>м. Тернопіль, вул. Прикладна, 7</p></div>
-        <div><small>Графік</small><p>Пн–Пт 9:00–18:00 · Сб 9:00–13:00</p></div>
-        <div><small>Діти з температурою</small><p>Пн–Пт 16:00–18:00</p></div>
-      </div>
+    </div>
+    <div class="info">
+      <div><small>Адреса</small><p>м. Тернопіль, вул. Прикладна, 7</p></div>
+      <div><small>Графік</small><p>Пн–Пт 9:00–18:00 · Сб 9:00–13:00</p></div>
+      <div><small>Діти з температурою</small><p>Пн–Пт 16:00–18:00</p></div>
     </div>
   </div>
 </section>
